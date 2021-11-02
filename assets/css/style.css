@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+}
+
+body {
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #19345e;
+}
+
+.home {
+  background-image: url(/assets/img/bg-img.png);
+  background-size: 100%;
+}
+
+.navbar-nav {
+  font-size: 13px;
+}
+
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #19345e;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f47522;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f47522;
+}
+
+.btn-orange {
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 10px;
+  background-color: #f47522;
+}
+
+.btn-orange:hover {
+  background-color: #f3cbb0;
+}
+
+#anne {
+  border-radius: 50%;
+  margin-top: 30%;
+  margin-left: 45%;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* Contact */
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.img-banner {
+  background-image: url("/assets/img/charles-rRWiVQzLm7k-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 35%;
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(25, 52, 94, 0.65);
+  width: 286%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alterra {
+  display: flex;
+  margin: 25%;
+  margin-top: 40%;
+  width: 50%;
+}
+
+.forms-a {
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+.form-text-a {
+  font-size: 20px;
+}
+
+.form-input-a,
+#nasionality {
+  width: 100%;
+  max-width: 450px;
+  min-width: 250px;
+  height: 28;
+  margin-bottom: 16px;
+}
+
+.messagebox {
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 2px solid grey;
+  max-width: 664px;
+  padding: 45px 49px;
+  background-color: #ffffff;
+  border: 1px solid #ccd7eb;
+  border-radius: 10px;
+}
+
+.background1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 75%;
+  width: 100%;
+  background-color: #ffffff;
+}
+.background2 {
+  position: absolute;
+  z-index: -1;
+  top: 75%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  background-color: #edf6ff;
+}
+
+.row hr {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+
+.row p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.99px) {
+  .forms-a,
+  #nasionality {
+    width: 90%;
+    height: 28;
+    padding-top: 0%;
+  }
+
+  .img-banner {
+    display: none;
+  }
+
+  .messagebox {
+    max-width: 500px;
+    padding: 45px 49px;
+  }
+}

@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Review Message</title>
+  </head>
+
+  <body>
+    <div class="background1"></div>
+    <div class="background2"></div>
+    <div class="container align-self-center messagebox">
+      <div class="row">
+        <div>
+          <p>
+            Full Name :
+            <span id="data-name style= display: inline">Mike</span>
+          </p>
+          <p>
+            Email Address :
+            <span id="data-email style=display: inline"
+              >mr.wazowski@email.com</span
+            >
+          </p>
+          <p>
+            Phone Number :
+            <span id="data-phone style=display: inline">081234567890</span>
+          </p>
+          <p>
+            Nationality :
+            <span id="data-national style=display: inline">Indonesian</span>
+          </p>
+        </div>
+        <div style="margin-top: 40px; margin-bottom: 100px">
+          <p>
+            <i id="data-message">
+              Anne, I’m Mike from Monsters, Inc. I’ve seen your previous project
+              and it was really amazing. And as you know our company are
+              planning to build new mobile application. I hope you can join us
+              to develope this application. We look forward to hearing from you
+              and hope you’ll join our project!
+            </i>
+          </p>
+        </div>
+        <hr />
+        <div>
+          <p style="font-size: 18px">
+            Thanks for contacting us! <br />
+            We will be in touch with you shortly.
+          </p>
+          <a class="btn btn-orange" href="./index.html" role="button">Home</a>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/img/img-dot.png"
+      id="dot"
+      alt="dot"
+      style="margin-left: 25%; margin-top: -2%"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+      // Retrieve
+      document.getElementById("data-name").innerHTML =
+        localStorage.getItem("fullnamevalue");
+      document.getElementById("data-email").innerHTML =
+        localStorage.getItem("emailvalue");
+      document.getElementById("data-phone").innerHTML =
+        localStorage.getItem("phonevalue");
+      document.getElementById("data-national").innerHTML =
+        localStorage.getItem("nationalityvalue");
+      document.getElementById("data-message").innerHTML =
+        localStorage.getItem("messagevalue");
+    </script>
+  </body>
+</html>

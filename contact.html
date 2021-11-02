@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <div class="row" style="margin-bottom: 0%">
+      <div class="col-md-5 img-banner">
+        <div class="img-banner">
+          <div class="layer">
+            <img
+              src="./assets/img/logo-ALTA-v2@2x.png"
+              id="alterra"
+              alt="alterra"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 forms-a">
+        <h3 style="font-size: 28px">Contact Us</h3>
+        <form id="form1" class="needs-validation" novalidate>
+          <label for="fullname" class="form-text-a form-label"
+            >Full Name<span style="color: red">*</span></label
+          >
+          <input
+            type="text"
+            class="form-input-a form-control"
+            id="fullname"
+            placeholder="Your Full Name Here..."
+            required
+          />
+          <div class="invalid-feedback">Full name cannot be empty</div>
+          <label for="email" class="form-text-a form-label"
+            >Email Address<span style="color: red">*</span></label
+          >
+          <input
+            type="email"
+            class="form-input-a form-control"
+            name="email"
+            id="email"
+            placeholder="example@domail.com"
+            required
+          />
+          <div class="invalid-feedback">Email address cannot be empty</div>
+          <label for="phone" class="form-text-a form-label"
+            >Phone Number<span style="color: red">*</span></label
+          >
+          <input
+            type="number"
+            class="form-input-a form-control"
+            id="phone"
+            placeholder="08573890xxxxx"
+            required
+          />
+          <div class="invalid-feedback">Phone number cannot be empty</div>
+          <label for="nationality" class="form-text-a form-label"
+            >Nationality</label
+          >
+          <select
+            name="nationality"
+            id="nationality"
+            class="form-select"
+            style="height: 40"
+          >
+            <option value="" disabled selected hidden>Selected</option>
+            <option value="Indonesian">Indonesia</option>
+            <option value="Malaysian">Malaysia</option>
+            <option value="Singaporean">Singapore</option>
+          </select>
+          <label for="message" class="form-text-a form-label">Message</label>
+          <textarea
+            name="message"
+            class="form-input-a form-control"
+            id="message"
+            style="height: 112px"
+            placeholder="Your Full Name Here..."
+          ></textarea>
+
+          <a
+            class="btn btn-primary btn-orange"
+            href="./review_message.html"
+            role="button"
+            type="submit"
+            onclick="submitForm(event)"
+            >Submit</a
+          >
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
